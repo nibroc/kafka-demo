@@ -7,6 +7,8 @@ plugins {
 	kotlin("plugin.spring") version "1.6.21"
 }
 
+group = "com.corbinhughes.kafkademo"
+version = "1.0.0-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_17
 
 dependencies {
@@ -30,4 +32,8 @@ tasks.withType<KotlinCompile> {
 
 tasks.withType<Test> {
 	useJUnitPlatform()
+}
+
+repositories {
+	mavenCentral()
 }

@@ -6,6 +6,9 @@ plugins {
     kotlin("jvm") version "1.6.21"
 }
 
+group = "com.corbinhughes.kafkademo"
+version = "1.0.0-SNAPSHOT"
+
 sourceSets {
     create("protobuf"){
         proto {
@@ -30,4 +33,8 @@ protobuf {
             }
         }
     }
+}
+
+repositories {
+    mavenCentral()
 }
